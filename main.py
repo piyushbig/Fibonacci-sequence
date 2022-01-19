@@ -1,11 +1,14 @@
 # fibonaccci
 
+#Take an input from user
 nterms = (int(input("enter the number of terms: ")))
 
+#assign values
 n1, n2 = 0, 1
 
 count = 0
 
+#Conditions
 if nterms <= 0:
     print("please enter a positive integer!")
 elif nterms == 1:
@@ -14,7 +17,8 @@ elif nterms == 1:
 
 else:
     print("fibonacci sequence on the way")
-
+    
+#main setup
     while count < nterms:
         print(n1)
         nth = n1 + n2
